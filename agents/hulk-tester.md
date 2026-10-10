@@ -17,9 +17,9 @@ temporary folder (`mktemp -d`). You do the testing yourself; you can't call othe
 address filled in, is the subject right). Never run `open`, never submit a form to a real address, and never send an
 email, text or order. Test only in a headless browser or by reading the files, never in the user's own browser or apps.
 In a headless browser, block those links before you click anything, or the computer hands them to its mail or phone
-app: in Playwright, `page.route('**/*', r => /^(mailto|tel|sms):/.test(r.request().url()) ? r.abort() : r.continue())`
-does not catch them, so also add a script before the page loads that stops clicks on `a[href^="mailto:"]`,
-`a[href^="tel:"]` and `a[href^="sms:"]` and any `location` change to those schemes, and report the link instead.
+app (network interception like Playwright's `page.route` never sees them). Add a script that runs before the page loads
+and cancels every click on `a[href^="mailto:"]`, `a[href^="tel:"]` and `a[href^="sms:"]`, and any script that sets
+`location` to one of those, then report what the link would have done.
 
 ## Smash it like a real customer would
 
