@@ -58,6 +58,11 @@ class TheTeam(unittest.TestCase):
         for p in AGENTS.glob("*.md"):
             self.assertFalse(tools(p) & {"Agent", "Task"}, p.name)
 
+    def test_hulk_never_sets_anything_off(self):
+        text = (AGENTS / "hulk-tester.md").read_text()
+        for word in ("mailto:", "tel:", "Never run `open`", "headless browser"):
+            self.assertIn(word, text)
+
     def test_skill_names_every_hero(self):
         text = SKILL.read_text()
         for name in HEROES:
