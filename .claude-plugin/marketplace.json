@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "avengers-assemble",
+  "description": "The Avengers Assemble skill for Claude Code",
+  "owner": {
+    "name": "Joe Brunner"
+  },
+  "plugins": [
+    {
+      "name": "avengers-assemble",
+      "description": "A team of five Claudes for big jobs: Cap leads, Spider-Man researches with links, Iron Man builds, Hulk tries to break it, Thor reviews with no edit tools. Nothing ships until it's worthy.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/JoeBrunner/avengers-assemble"
+    }
+  ]
+}

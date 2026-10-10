@@ -1,0 +1,12 @@
+{
+  "name": "avengers-assemble",
+  "description": "Say \"avengers assemble\" on a big job and Claude leads a team of five: Captain America splits the job, Spider-Man researches with a link for every fact, Iron Man builds, Hulk tries to break it, and Thor reviews it without being able to edit a thing. Nothing ships until it's worthy. Small jobs stay with one Claude.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Joe Brunner"
+  },
+  "homepage": "https://github.com/JoeBrunner/avengers-assemble",
+  "repository": "https://github.com/JoeBrunner/avengers-assemble",
+  "license": "MIT",
+  "keywords": ["claude-code", "skill", "subagents", "agents", "team", "review"]
+}
