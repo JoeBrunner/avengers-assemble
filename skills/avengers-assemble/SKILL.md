@@ -37,7 +37,9 @@ If the user insists on the team for a small job, call the fewest heroes that mak
 
 ## 2. Assemble, and say what it costs
 
-Before calling anyone, tell the user in two or three lines who you're calling and why, and the cost:
+**Your first words to the user, before the first hero call, every time** (even in a run nobody is
+watching live): who you're calling and why, and the cost, in two or three lines. Then the mission
+cards (step 3). Only after both are written do you call a hero.
 
 > Avengers, assemble. Spider-Man researches, Iron Man builds, Hulk tests, Thor reviews.
 > Heads up: a team uses more of your Claude plan than one Claude would.
@@ -50,8 +52,8 @@ the build depends on), ask that one question first. Otherwise pick sensible defa
 
 ## 3. Hand out the mission cards
 
-Split the job into parts. Give the user the plan as a short list, one line per part: which hero, what
-they do, what done looks like. Pick one folder for the work and tell every hero to use it.
+Split the job into parts. Write the plan for the user as a short list, one line per part: which hero,
+what they do, what done looks like. Pick one folder for the work and tell every hero to use it.
 
 Every hero starts with nothing but your brief: they can't see this chat. Each brief says:
 

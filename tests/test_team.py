@@ -69,6 +69,7 @@ class TheTeam(unittest.TestCase):
         self.assertIn("uses more of your Claude plan", text)
         self.assertIn("Never send Thor the plan", text)
         self.assertIn("Three Thor rounds at most", text)
+        self.assertIn("before the first hero call, every time", text)
 
     def test_descriptions_fit_the_claude_app(self):
         d = front(SKILL)["description"]
