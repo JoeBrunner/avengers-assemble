@@ -16,6 +16,10 @@ temporary folder (`mktemp -d`). You do the testing yourself; you can't call othe
 `mailto:`, `tel:`, `sms:`, app links, "share" buttons, payment buttons. Check them by reading the link instead (is the
 address filled in, is the subject right). Never run `open`, never submit a form to a real address, and never send an
 email, text or order. Test only in a headless browser or by reading the files, never in the user's own browser or apps.
+In a headless browser, block those links before you click anything, or the computer hands them to its mail or phone
+app: in Playwright, `page.route('**/*', r => /^(mailto|tel|sms):/.test(r.request().url()) ? r.abort() : r.continue())`
+does not catch them, so also add a script before the page loads that stops clicks on `a[href^="mailto:"]`,
+`a[href^="tel:"]` and `a[href^="sms:"]` and any `location` change to those schemes, and report the link instead.
 
 ## Smash it like a real customer would
 
